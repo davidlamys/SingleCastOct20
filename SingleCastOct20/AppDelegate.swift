@@ -12,7 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var backgroundSessionCompletionHandler : ()->Void = {}
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -41,6 +42,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: () -> Void){
+        println("app is still running because of this session:\(identifier)")
+        self.backgroundSessionCompletionHandler = completionHandler
+    }
+    
+    func presentLocalNotification(){
+        var localNotification =  UILocalNotification()
+        localNotification.alertBody = "Download completed!"
+        localNotification.alertAction = "background transfer download"
+        
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        
+        localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
+        
+        UIApplication.sharedApplication().presentLocalNotificationNow(localNotification)
+    }
+    
 }
 

@@ -34,3 +34,23 @@ class SingleCastOct20Tests: XCTestCase {
     }
     
 }
+
+
+
+/*
+- (void)invokeBackgroundSessionCompletionHandler {
+[self.session getTasksWithCompletionHandler:^(NSArray *dataTasks, NSArray *uploadTasks, NSArray *downloadTasks) {
+NSUInteger count = [dataTasks count] + [uploadTasks count] + [downloadTasks count];
+
+if (!count) {
+MTAppDelegate *applicationDelegate = (MTAppDelegate *)[[UIApplication sharedApplication] delegate];
+void (^backgroundSessionCompletionHandler)() = [applicationDelegate backgroundSessionCompletionHandler];
+
+if (backgroundSessionCompletionHandler) {
+[applicationDelegate setBackgroundSessionCompletionHandler:nil];
+backgroundSessionCompletionHandler();
+}
+}
+}];
+}
+*/

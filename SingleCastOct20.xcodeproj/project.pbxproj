@@ -13,6 +13,9 @@
 		15AF6B3E19F4F15B008FCED2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AF6B3D19F4F15B008FCED2 /* Images.xcassets */; };
 		15AF6B4119F4F15B008FCED2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15AF6B3F19F4F15B008FCED2 /* LaunchScreen.xib */; };
 		15AF6B4D19F4F15B008FCED2 /* SingleCastOct20Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF6B4C19F4F15B008FCED2 /* SingleCastOct20Tests.swift */; };
+		15AF6B5719F4F181008FCED2 /* MTSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF6B5619F4F181008FCED2 /* MTSearchViewController.swift */; };
+		15AF6B6319F60A95008FCED2 /* MTEpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF6B6219F60A95008FCED2 /* MTEpisodeTableViewCell.swift */; };
+		5E0BE44F329917C7A270E1D7 /* libPods-SingleCastOct20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3510ED240E0F27D5B7EC6EC /* libPods-SingleCastOct20.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 		15AF6B4619F4F15B008FCED2 /* SingleCastOct20Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingleCastOct20Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AF6B4B19F4F15B008FCED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15AF6B4C19F4F15B008FCED2 /* SingleCastOct20Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCastOct20Tests.swift; sourceTree = "<group>"; };
+		15AF6B5619F4F181008FCED2 /* MTSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTSearchViewController.swift; sourceTree = "<group>"; };
+		15AF6B5819F5EBE4008FCED2 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		15AF6B6219F60A95008FCED2 /* MTEpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTEpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		956B07D504C7E807D1FCBADD /* Pods-SingleCastOct20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingleCastOct20.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingleCastOct20/Pods-SingleCastOct20.release.xcconfig"; sourceTree = "<group>"; };
+		E3510ED240E0F27D5B7EC6EC /* libPods-SingleCastOct20.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SingleCastOct20.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42045781273E62B6288E85D /* Pods-SingleCastOct20.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingleCastOct20.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingleCastOct20/Pods-SingleCastOct20.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E0BE44F329917C7A270E1D7 /* libPods-SingleCastOct20.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				15AF6B3319F4F15B008FCED2 /* SingleCastOct20 */,
 				15AF6B4919F4F15B008FCED2 /* SingleCastOct20Tests */,
 				15AF6B3219F4F15B008FCED2 /* Products */,
+				43A5E50C99182E042B9D0BA5 /* Pods */,
+				59339DECDCC68C51A0CB677D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +89,15 @@
 		15AF6B3319F4F15B008FCED2 /* SingleCastOct20 */ = {
 			isa = PBXGroup;
 			children = (
+				15AF6B6219F60A95008FCED2 /* MTEpisodeTableViewCell.swift */,
 				15AF6B3619F4F15B008FCED2 /* AppDelegate.swift */,
+				15AF6B5619F4F181008FCED2 /* MTSearchViewController.swift */,
 				15AF6B3819F4F15B008FCED2 /* ViewController.swift */,
 				15AF6B3A19F4F15B008FCED2 /* Main.storyboard */,
 				15AF6B3D19F4F15B008FCED2 /* Images.xcassets */,
 				15AF6B3F19F4F15B008FCED2 /* LaunchScreen.xib */,
 				15AF6B3419F4F15B008FCED2 /* Supporting Files */,
+				15AF6B5819F5EBE4008FCED2 /* Header.h */,
 			);
 			path = SingleCastOct20;
 			sourceTree = "<group>";
@@ -112,6 +127,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		43A5E50C99182E042B9D0BA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E42045781273E62B6288E85D /* Pods-SingleCastOct20.debug.xcconfig */,
+				956B07D504C7E807D1FCBADD /* Pods-SingleCastOct20.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		59339DECDCC68C51A0CB677D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3510ED240E0F27D5B7EC6EC /* libPods-SingleCastOct20.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15AF6B5019F4F15B008FCED2 /* Build configuration list for PBXNativeTarget "SingleCastOct20" */;
 			buildPhases = (
+				F67E5BBF525E44030B457ADE /* Check Pods Manifest.lock */,
 				15AF6B2D19F4F15B008FCED2 /* Sources */,
 				15AF6B2E19F4F15B008FCED2 /* Frameworks */,
 				15AF6B2F19F4F15B008FCED2 /* Resources */,
+				81F91BED990C786352386CDD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,12 +241,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		81F91BED990C786352386CDD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingleCastOct20/Pods-SingleCastOct20-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F67E5BBF525E44030B457ADE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		15AF6B2D19F4F15B008FCED2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AF6B6319F60A95008FCED2 /* MTEpisodeTableViewCell.swift in Sources */,
 				15AF6B3919F4F15B008FCED2 /* ViewController.swift in Sources */,
+				15AF6B5719F4F181008FCED2 /* MTSearchViewController.swift in Sources */,
 				15AF6B3719F4F15B008FCED2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,21 +403,25 @@
 		};
 		15AF6B5119F4F15B008FCED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42045781273E62B6288E85D /* Pods-SingleCastOct20.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SingleCastOct20/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SingleCastOct20/Header.h;
 			};
 			name = Debug;
 		};
 		15AF6B5219F4F15B008FCED2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 956B07D504C7E807D1FCBADD /* Pods-SingleCastOct20.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SingleCastOct20/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SingleCastOct20/Header.h;
 			};
 			name = Release;
 		};
@@ -405,6 +478,7 @@
 				15AF6B5219F4F15B008FCED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15AF6B5319F4F15B008FCED2 /* Build configuration list for PBXNativeTarget "SingleCastOct20Tests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +487,7 @@
 				15AF6B5519F4F15B008FCED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
